@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Buku - Pustaka Kita</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Pustaka<span>Kita</span></div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="catalog.html" class="active">Katalog Buku</a></li>
+            <li><a href="details.html">Detail Buku</a></li> <!-- Direct link as requested, though usually dynamic -->
+            <li><a href="#" class="cart-icon"><i class="fas fa-shopping-bag"></i></a></li>
+        </ul>
+    </nav>
+
+    <header class="section" style="background: var(--background-light); padding-bottom: 2rem;">
+        <h1 class="section-title" style="margin-bottom: 1rem;">Katalog Buku</h1>
+        <p style="text-align: center; color: var(--text-light);">Temukan buku favoritmu dari koleksi terbaik kami.</p>
+    </header>
+
+    <!-- Catalog Section -->
+    <section class="section">
+        <!-- Filters (Visual only for prototype) -->
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 3rem;">
+            <button class="btn" style="padding: 0.5rem 1.5rem;">Semua</button>
+            <button class="btn btn-outline"
+                style="border-color: var(--secondary-color); color: var(--text-dark);">Fiksi</button>
+            <button class="btn btn-outline"
+                style="border-color: var(--secondary-color); color: var(--text-dark);">Non-fiksi</button>
+            <button class="btn btn-outline"
+                style="border-color: var(--secondary-color); color: var(--text-dark);">Komik</button>
+            <button class="btn btn-outline" style="border-color: var(--secondary-color); color: var(--text-dark);">Novel
+                Remaja</button>
+        </div>
+
+        <div class="book-grid">
+            <!-- Book 1 -->
+            <a href="details.html" class="book-card-link">
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=800"
+                            alt="Laskar Pelangi">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Fiksi</span>
+                        <h3 class="book-title">Laskar Pelangi</h3>
+                        <p class="book-author">Andrea Hirata</p>
+                        <div class="book-price">
+                            <span>Rp 85.000</span>
+                            <div class="add-btn"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Book 2 -->
+            <a href="details.html" class="book-card-link">
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800"
+                            alt="Filosofi Teras">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Non-fiksi</span>
+                        <h3 class="book-title">Filosofi Teras</h3>
+                        <p class="book-author">Henry Manampiring</p>
+                        <div class="book-price">
+                            <span>Rp 98.000</span>
+                            <div class="add-btn"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Book 3 -->
+            <a href="details.html" class="book-card-link">
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=800"
+                            alt="Bumi Manusia">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Fiksi</span>
+                        <h3 class="book-title">Bumi Manusia</h3>
+                        <p class="book-author">Pramoedya Ananta Toer</p>
+                        <div class="book-price">
+                            <span>Rp 125.000</span>
+                            <div class="add-btn"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Book 4 -->
+            <a href="details.html" class="book-card-link">
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?auto=format&fit=crop&q=80&w=800"
+                            alt="Atomic Habits">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Non-fiksi</span>
+                        <h3 class="book-title">Atomic Habits</h3>
+                        <p class="book-author">James Clear</p>
+                        <div class="book-price">
+                            <span>Rp 108.000</span>
+                            <div class="add-btn"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Book 5 -->
+            <a href="details.html" class="book-card-link">
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="https://images.unsplash.com/photo-1614583224978-f05ce51ef5fa?auto=format&fit=crop&q=80&w=800"
+                            alt="Naruto">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Komik</span>
+                        <h3 class="book-title">Naruto Vol. 72</h3>
+                        <p class="book-author">Masashi Kishimoto</p>
+                        <div class="book-price">
+                            <span>Rp 45.000</span>
+                            <div class="add-btn"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Book 6 -->
+            <a href="details.html" class="book-card-link">
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=800"
+                            alt="Biologi SMA">
+                    </div>
+                    <div class="book-info">
+                        <span class="book-category">Pelajaran</span>
+                        <h3 class="book-title">Biologi SMA Kls X</h3>
+                        <p class="book-author">Irnaningtyas</p>
+                        <div class="book-price">
+                            <span>Rp 75.000</span>
+                            <div class="add-btn"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>PustakaKita</h4>
+                <p>Toko buku online terpercaya dengan koleksi terlengkap untuk segala usia.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Kategori</h4>
+                <ul>
+                    <li><a href="#">Fiksi</a></li>
+                    <li><a href="#">Non-fiksi</a></li>
+                    <li><a href="#">Komik</a></li>
+                    <li><a href="#">Pelajaran</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Bantuan</h4>
+                <ul>
+                    <li><a href="#">Cara Pemesanan</a></li>
+                    <li><a href="#">Pengiriman</a></li>
+                    <li><a href="#">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 PustakaKita. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

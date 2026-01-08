@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Buku - Laskar Pelangi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Pustaka<span>Kita</span></div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="catalog.html">Katalog Buku</a></li>
+            <li><a href="details.html" class="active">Detail Buku</a></li>
+            <li><a href="#" class="cart-icon"><i class="fas fa-shopping-bag"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div style="padding: 2rem 5% 0;">
+        <p style="color: var(--text-light); font-size: 0.9rem;">
+            <a href="index.html">Beranda</a> / <a href="catalog.html">Katalog</a> / <span>Fiksi</span>
+        </p>
+    </div>
+
+    <!-- Product Details -->
+    <section class="section">
+        <div class="details-container">
+            <div class="detail-image">
+                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=800"
+                    alt="Laskar Pelangi Cover">
+            </div>
+            <div class="detail-content">
+                <span class="book-category" style="font-size: 1rem; margin-bottom: 1rem; display:block;">Fiksi</span>
+                <h1>Laskar Pelangi</h1>
+                <p class="book-author" style="font-size: 1.2rem; margin-bottom: 1rem;">Oleh <span
+                        style="font-weight: 600; color: var(--primary-color);">Andrea Hirata</span></p>
+
+                <div class="detail-meta">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <span style="color: #f1c40f;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star-half-alt"></i></span>
+                        <span style="color: var(--text-light);">(128 Ulasan)</span>
+                    </div>
+                    <p class="detail-price">Rp 85.000</p>
+                </div>
+
+                <div class="detail-desc">
+                    <h3 style="margin-bottom: 0.5rem; color: var(--primary-color);">Deskripsi Buku</h3>
+                    <p style="color: var(--text-light); line-height: 1.8;">
+                        Buku ini bercerita tentang kehidupan 10 anak dari keluarga miskin yang bersekolah (SD dan SMP)
+                        di sebuah sekolah Muhammadiyah di Belitung yang penuh dengan keterbatasan. Mereka adalah Ikal,
+                        Lintang, Sahara, Mahar, A Kiong, Syahdan, Kucai, Borek, Trapani, dan Harun. Mereka bersekolah
+                        dan belajar pada kelas yang sama dari kelas 1 SD sampai kelas 3 SMP, dan menyebut diri mereka
+                        sebagai Laskar Pelangi.
+                    </p>
+                    <p style="color: var(--text-light); line-height: 1.8; margin-top: 1rem;">
+                        Novel ini tercatat sebagai buku sastra Indonesia terlaris sepanjang sejarah. Cerita ini
+                        menyuguhkan perjuangan, harapan, dan keindahan persahabatan yang tak terlupakan.
+                    </p>
+                </div>
+
+                <div style="display: flex; gap: 1rem;">
+                    <button class="btn" onclick="addToCart()">Masukkan Keranjang</button>
+                    <button class="btn btn-outline"
+                        style="border-color: var(--secondary-color); color: var(--text-dark);">Beli Langsung</button>
+                </div>
+
+                <div style="margin-top: 2rem; border-top: 1px solid #eee; padding-top: 2rem;">
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+                        <p><strong>Penerbit:</strong> Bentang Pustaka</p>
+                        <p><strong>Tahun Terbit:</strong> 2005</p>
+                        <p><strong>Halaman:</strong> 529</p>
+                        <p><strong>Bahasa:</strong> Indonesia</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>PustakaKita</h4>
+                <p>Toko buku online terpercaya dengan koleksi terlengkap untuk segala usia.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Kategori</h4>
+                <ul>
+                    <li><a href="#">Fiksi</a></li>
+                    <li><a href="#">Non-fiksi</a></li>
+                    <li><a href="#">Komik</a></li>
+                    <li><a href="#">Pelajaran</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Bantuan</h4>
+                <ul>
+                    <li><a href="#">Cara Pemesanan</a></li>
+                    <li><a href="#">Pengiriman</a></li>
+                    <li><a href="#">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 PustakaKita. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

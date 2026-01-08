@@ -1,1 +1,150 @@
-hi
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pustaka Kita - Toko Buku Online Terlengkap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Pustaka<span>Kita</span></div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Beranda</a></li>
+            <li><a href="catalog.html">Katalog Buku</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+            <li><a href="#" class="cart-icon"><i class="fas fa-shopping-bag"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Temukan Dunia Baru di Setiap Halaman</h1>
+        <p>Jelajahi koleksi buku terbaik dari fiksi, nonfiksi, hingga komik favoritmu.</p>
+        <div class="hero-btns">
+            <a href="catalog.html" class="btn">Belanja Sekarang</a>
+            <a href="#categories" class="btn btn-outline">Lihat Kategori</a>
+        </div>
+    </header>
+
+    <!-- Categories Section -->
+    <section id="categories" class="section">
+        <h2 class="section-title">Kategori Unggulan</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <div class="category-icon"><i class="fas fa-book-open"></i></div>
+                <h3>Fiksi</h3>
+                <p>Novel best-seller dan cerita imajinatif</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon"><i class="fas fa-brain"></i></div>
+                <h3>Non-fiksi</h3>
+                <p>Biografi, sejarah, dan pengembangan diri</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon"><i class="fas fa-mask"></i></div>
+                <h3>Komik</h3>
+                <p>Manga, manhwa, dan komik lokal</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon"><i class="fas fa-user-graduate"></i></div>
+                <h3>Pelajaran</h3>
+                <p>Buku sekolah dan referensi akademik</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Books Preview -->
+    <section class="section" style="background-color: #fff;">
+        <h2 class="section-title">Buku Terbaru</h2>
+        <div class="book-grid">
+            <!-- Book 1 -->
+            <div class="book-card">
+                <div class="book-image">
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=800" alt="Book Cover">
+                </div>
+                <div class="book-info">
+                    <span class="book-category">Fiksi</span>
+                    <h3 class="book-title">Laskar Pelangi</h3>
+                    <p class="book-author">Andrea Hirata</p>
+                    <div class="book-price">
+                        <span>Rp 85.000</span>
+                        <button class="add-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+             <!-- Book 2 -->
+             <div class="book-card">
+                <div class="book-image">
+                    <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800" alt="Book Cover">
+                </div>
+                <div class="book-info">
+                    <span class="book-category">Non-fiksi</span>
+                    <h3 class="book-title">Filosofi Teras</h3>
+                    <p class="book-author">Henry Manampiring</p>
+                    <div class="book-price">
+                        <span>Rp 98.000</span>
+                        <button class="add-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+             <!-- Book 3 -->
+             <div class="book-card">
+                <div class="book-image">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=800" alt="Book Cover">
+                </div>
+                <div class="book-info">
+                    <span class="book-category">Fiksi</span>
+                    <h3 class="book-title">Bumi Manusia</h3>
+                    <p class="book-author">Pramoedya Ananta Toer</p>
+                    <div class="book-price">
+                        <span>Rp 125.000</span>
+                        <button class="add-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="catalog.html" class="btn">Lihat Semua Koleksi</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>PustakaKita</h4>
+                <p>Toko buku online terpercaya dengan koleksi terlengkap untuk segala usia.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Kategori</h4>
+                <ul>
+                    <li><a href="#">Fiksi</a></li>
+                    <li><a href="#">Non-fiksi</a></li>
+                    <li><a href="#">Komik</a></li>
+                    <li><a href="#">Pelajaran</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Bantuan</h4>
+                <ul>
+                    <li><a href="#">Cara Pemesanan</a></li>
+                    <li><a href="#">Pengiriman</a></li>
+                    <li><a href="#">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 PustakaKita. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
